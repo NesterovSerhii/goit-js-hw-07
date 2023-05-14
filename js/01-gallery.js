@@ -49,14 +49,6 @@ function onGalleryImageClick(event) {
   });
     
     instance.show();
-
-    window.addEventListener("keydown", onCloseModal);
-
-    function onCloseModal(event) {
-    if (event.code === "Escape") {
-        instance.close();
-      }
-    }
     
     function onPressEscKey(event) {
       if (event.code !== 'Escape') {
